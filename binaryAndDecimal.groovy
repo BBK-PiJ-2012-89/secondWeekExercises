@@ -25,12 +25,12 @@ binaryNum = System.console().readLine()
 
 double binary2decimal(String binaryNumx){
     double decimal
-    for(int a = 0; a < binaryNumx.length();a++){
-	    if(binaryNumx.charAt(0) == "1"){
+	if(binaryNumx.charAt(0) == "1"){
 		    decimal = decimal + 1
         }
-		if(binaryNumx.charAt(a) == "1"){
-		    decimal = decimal + 1*(2 E a)
+    for(int a = 0; a < binaryNumx.length();a++){
+    	if(binaryNumx.charAt(a) == "1"){
+		    decimal = decimal + 1*2*a
 		    println decimal
 		}
 	}
