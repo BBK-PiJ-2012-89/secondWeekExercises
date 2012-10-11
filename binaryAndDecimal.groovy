@@ -22,18 +22,21 @@ if(b2d == true){
 binaryNum = System.console().readLine()
 }
 
+
 double binary2decimal(String binaryNumx){
-    double decimal = 0
-    for(a = binaryNumx.length()-1; a>= 0; a--){
-	    if(binaryNumx.charAt(a) == 1){
-	    decimal = decimal + (2*a*a)
-		a--
-	    } else if(binaryNumx.charAt(a) == 0){
-    	a--
-	    }
+    double decimal
+    for(int a = 0; a < binaryNumx.length();a++){
+	    if(binaryNumx.charAt(0) == "1"){
+		    decimal = decimal + 1
+        }
+		if(binaryNumx.charAt(a) == "1"){
+		    decimal = decimal + 1*(2 E a)
+		    println decimal
+		}
 	}
     return decimal
 }
+
 double returnDecimal = binary2decimal(binaryNum)
 //double returnBinary = decimal2binary(int
 print returnDecimal
